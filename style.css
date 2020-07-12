@@ -334,22 +334,28 @@ header p {
 }
 
 .contact .contact-body .form .input textarea{
+  /* position: absolute; */
   width: 100%;
-  height: 200px;
+  height: 100px;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #000;
 }
 
-/* .contact .contact-body .form textarea{
-  width: 90%;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  margin: 10px auto;
-  padding: 10px;
-  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
-  resize: none;
-} */
+.contact .contact-body .form .input textarea:focus + span {
+  font-size: 1rem;
+  bottom: 60px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+}
 
-/* .contact .contact-body .form button{
+.contact .contact-body .form .input textarea:focus{
+  border-bottom: 2px solid #fff;
+}
+
+
+.contact .contact-body .form button{
   display: block;
   margin: 20px auto 0;
   padding: 10px 20px;
@@ -361,7 +367,8 @@ header p {
   border-radius: 20px;
   box-shadow: 2px 3px 5px rgba(0,0,0,.2);
   cursor: pointer;
-} */
+  outline: none;
+}
 
 .contact .contact-body img{
   width: 30%;
